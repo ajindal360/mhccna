@@ -7,7 +7,7 @@
         <description>Year - OwnerName Concatenate</description>
         <name>NameConcatenate</name>
         <dataType>String</dataType>
-        <expression>RIGHT(TEXT(YEAR($Record.Fiscal_year_starts__c)) + &apos;-&apos; + {!$Record.Owner:User.FirstName} + &apos; &apos; + {!$Record.Owner:User.LastName},80)</expression>
+        <expression>LEFT(TEXT(YEAR($Record.Fiscal_year_starts__c)) + &apos;-&apos; + {!$Record.Owner:User.FirstName} + &apos; &apos; + {!$Record.Owner:User.LastName},80)</expression>
     </formulas>
     <formulas>
         <description>Target Year and Owner ID Concatenation</description>
