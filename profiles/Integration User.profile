@@ -112,11 +112,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Sales_Targets__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Sales_Targets__c.Active__c</field>
         <readable>true</readable>
     </fieldPermissions>
