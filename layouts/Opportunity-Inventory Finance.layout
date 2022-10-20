@@ -79,7 +79,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Sales_Targets__c</field>
+                <field>Sales_Target__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -102,6 +102,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>AccountId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CampaignId</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

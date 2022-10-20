@@ -7,12 +7,12 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Opportunity.Current_Monthly_Target__c</column>
+            <column>EXP_AMOUNT</column>
         </chartSummaries>
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>EXP_AMOUNT</column>
+            <column>Opportunity.Current_Monthly_Target__c</column>
         </chartSummaries>
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
@@ -54,16 +54,6 @@
         <field>CLOSE_DATE</field>
     </columns>
     <description>Monthly sales summary comparing total probability amount vs the sales monthly target.</description>
-    <filter>
-        <criteriaItems>
-            <column>STAGE_NAME</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>Closed Won</value>
-        </criteriaItems>
-        <language>en_US</language>
-    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

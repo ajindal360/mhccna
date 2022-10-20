@@ -53,7 +53,13 @@
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
-        <field>Opportunity.Relationship_Name__c</field>
+        <field>Opportunity.Customer_Name__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Vendor__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_MONTH</field>
     </columns>
     <description>Annual sales summary comparing total probability amount vs the annual target.</description>
     <format>Summary</format>

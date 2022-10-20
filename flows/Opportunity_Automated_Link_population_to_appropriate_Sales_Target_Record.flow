@@ -71,7 +71,7 @@
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Sales_Targets__c</object>
+        <object>Sales_Target__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
@@ -81,7 +81,7 @@
         <locationX>50</locationX>
         <locationY>551</locationY>
         <inputAssignments>
-            <field>Sales_Targets__c</field>
+            <field>Sales_Target__c</field>
             <value>
                 <elementReference>Sales_Target.Id</elementReference>
             </value>
@@ -97,9 +97,9 @@
         <filterLogic>or</filterLogic>
         <filters>
             <field>CloseDate</field>
-            <operator>IsChanged</operator>
+            <operator>IsNull</operator>
             <value>
-                <booleanValue>true</booleanValue>
+                <booleanValue>false</booleanValue>
             </value>
         </filters>
         <object>Opportunity</object>

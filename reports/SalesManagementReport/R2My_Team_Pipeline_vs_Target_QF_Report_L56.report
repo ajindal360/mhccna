@@ -92,7 +92,7 @@
         <field>STAGE_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>R2-My Team Pipeline vs Target QF Report</name>
+    <name>R2-My Team Pipeline vs Target FQ Report</name>
     <params>
         <name>open</name>
         <value>all</value>
