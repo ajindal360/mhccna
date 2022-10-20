@@ -3,6 +3,31 @@
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Integration_Log__c.Object_API_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Integration_Log__c.Org_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Integration_Log__c.Stack_Trace__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Integration_Setting__mdt.API_Key__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Integration_Setting__mdt.HelpDesk_Email_Address__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Integration_Log__c.Record_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -156,6 +181,12 @@
         <field>Sales_Targets__c.User__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <layoutAssignments>
+        <layout>Integration_Log__c-Integration logs Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Integration_Setting__mdt-Integration Setting Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Sales_Target__c-Sales Targets Layout</layout>
     </layoutAssignments>

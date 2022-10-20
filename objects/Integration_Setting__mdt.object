@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Integration Setting</label>
+    <pluralLabel>Integration Settings</pluralLabel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>API_Key__c</fullName>
+        <description>The API Key for use in authenticating Microservices access.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The API Key for use in authenticating Microservices access.</inlineHelpText>
+        <label>API Key</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Point__c</fullName>
+        <description>The Endpoint for the defined object&apos;s MicroService</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Endpoint for the defined object&apos;s MicroService</inlineHelpText>
+        <label>End Point</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_ID__c</fullName>
+        <description>MDM Source ID for Salesforce</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This value (4) is expected by MDM to identify Salesforce as an authorized source when sending any request</inlineHelpText>
+        <label>Source ID</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Environment__c</fullName>
+        <description>This identifies the type source/target environment set (sandbox, production)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Determines whether the connection is from/to a Sandbox or a Production environment</inlineHelpText>
+        <label>Environment</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sandbox</fullName>
+                    <default>true</default>
+                    <label>Sandbox</label>
+                </value>
+                <value>
+                    <fullName>Production</fullName>
+                    <default>false</default>
+                    <label>Production</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Object_API_Name__c</fullName>
+        <description>API Name of the SFDC object for which the MDM create/update request is sent</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This custom metadata record is used to send MDM create/update request for the SFDC object specified here</inlineHelpText>
+        <label>Object API Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HelpDesk_Email_Address__c</fullName>
+        <description>The email address used to send notification of integration issues. This may result in a case being created if the email is related to Salesforce&apos;s Email-to-Case feature</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The email address used to send notification of integration issues. This may result in a case being created if the email is related to Salesforce&apos;s Email-to-Case feature</inlineHelpText>
+        <label>HelpDesk Email Address</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
