@@ -2,16 +2,6 @@
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <custom>true</custom>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Integration_Setting__mdt.API_Key__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Integration_Setting__mdt.HelpDesk_Email_Address__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Integration_Log__c.Record_Id__c</field>
         <readable>true</readable>
@@ -168,9 +158,6 @@
     </fieldPermissions>
     <layoutAssignments>
         <layout>Integration_Log__c-Integration logs Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Integration_Setting__mdt-Integration Setting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Sales_Target__c-Sales Targets Layout</layout>
