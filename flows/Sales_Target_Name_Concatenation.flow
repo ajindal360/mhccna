@@ -7,13 +7,13 @@
         <description>Year - OwnerName Concatenate</description>
         <name>NameConcatenate</name>
         <dataType>String</dataType>
-        <expression>LEFT(TEXT(YEAR($Record.Fiscal_year_starts__c)) + &apos;-&apos; + {!$Record.Owner:User.FirstName} + &apos; &apos; + {!$Record.Owner:User.LastName},80)</expression>
+        <expression>LEFT(TEXT(YEAR($Record.Fiscal_year_starts__c)) + &apos;-&apos; + {!$Record.User__r.FirstName}+ &apos; &apos;+ {!$Record.User__r.LastName},80)</expression>
     </formulas>
     <formulas>
         <description>Target Year and Owner ID Concatenation</description>
         <name>TargetConcatenation</name>
         <dataType>String</dataType>
-        <expression>TEXT(YEAR($Record.Fiscal_Year_Starts__c)) + &apos;-&apos; + $Record.OwnerId</expression>
+        <expression>TEXT(YEAR($Record.Fiscal_Year_Starts__c)) + &apos;-&apos; + {!$Record.User__r.Id}</expression>
     </formulas>
     <interviewLabel>Sales Target Name Concatenation {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Sales Target Name Concatenation</label>
@@ -76,7 +76,7 @@
                 <booleanValue>true</booleanValue>
             </value>
         </filters>
-        <object>Sales_Targets__c</object>
+        <object>Sales_Target__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>
     </start>

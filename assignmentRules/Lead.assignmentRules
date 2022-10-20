@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Set Lead Owner</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Web_to_Lead_Equipment_Finance</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Deal_Type__c</field>
+                <operation>equals</operation>
+                <value>Equipment Finance,General Inquiry</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Web_to_Lead_Business_Finance</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Deal_Type__c</field>
+                <operation>equals</operation>
+                <value>Business Finance</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Web_to_Lead_Inventory_Finance</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Deal_Type__c</field>
+                <operation>equals</operation>
+                <value>Inventory Finance</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

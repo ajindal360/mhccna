@@ -53,6 +53,9 @@
     <columns>
         <field>CLOSE_DATE</field>
     </columns>
+    <columns>
+        <field>CLOSE_MONTH</field>
+    </columns>
     <description>Quarterly sales summary comparing total probability amount vs the quarterly sales target.</description>
     <filter>
         <criteriaItems>
@@ -70,7 +73,7 @@
         <field>FULL_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>R2 - My Team Quarterly Target QF Report</name>
+    <name>R2 - My Team Quarterly Target FQ Report</name>
     <params>
         <name>open</name>
         <value>all</value>
